@@ -11,10 +11,13 @@
 <body>
   <div id="app">
     <div 
-    
-      v-for="email in arrEmail">
+      v-if="arrEmail.length === 10"
+     >
 
-      <h1>{{email}}</h1>
+      <h1
+        v-for="email in arrEmail">
+        {{email}}
+      </h1>
 
     </div>
   </div>
